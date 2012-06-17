@@ -29,20 +29,35 @@
             {
                 color: #860a02
             }
+
+            #message-box
+            {
+                margin: auto auto auto auto;
+                width: 500px;
+                border-left: 1px solid black;
+            }
+
+            #message-box-inner
+            {
+                margin-left: 7px;
+                margin-right: 7px;
+            }
         </style>
     </head>
 
     <body>
         <div id="message-box">
-            <table id="status-box">
-                <tr>
-	                <td id="online"></td>
-                    <td id="status">консультант онлайн</td>
-                </tr>
-            </table>
-            <div id="answer-box"></div>
-            <input id="send-text" type="text" />
-            <input id="send-button" type="button" value="послать" />
+            <div id="message-box-inner">
+                <table id="status-box">
+                    <tr>
+	                    <td id="online"></td>
+                        <td id="status">консультант онлайн</td>
+                    </tr>
+                </table>
+                <div id="answer-box"></div>
+                <input id="send-text" type="text" />
+                <input id="send-button" type="button" value="послать" />
+            </div>
         </div>
         <script type="text/javascript">
             function sendArticle(message, isAnswer) {
